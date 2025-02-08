@@ -1,0 +1,28 @@
+<div class="container mt-4">
+  <h1 class="text-center mb-4">Chat App</h1>
+  
+  <!-- Caja para mostrar los mensajes -->
+  <div id="chatBox" class="border rounded p-3 mb-3" style="height: 300px; overflow-y: auto;">
+    <!-- Aquí se mostrarán los mensajes del chat -->
+  </div>
+  
+  <!-- Formulario del chat -->
+  <form id="formChat" action="" class="input-group">
+    <input
+      type="text"
+      id="inputChat"
+      placeholder="Escriba su mensaje"
+      class="form-control"
+    >
+    <button type="submit" class="btn btn-primary">
+      Enviar
+    </button>
+  </form>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
+
+{{!-- //no necesitas ir a public porque al decirle a express que use publiv,ya sabe que los archivos estan en la raiz --}}
